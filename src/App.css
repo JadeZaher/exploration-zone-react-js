@@ -23,13 +23,18 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+.App-link {
+  color: #61dafb;
+}
 
+/* homebrew */
 .section-main{
   width: 60vw;
 }
 
-.App-link {
-  color: #61dafb;
+.glitch{
+  margin: 100px;
+  animation: glitch infinite 2s linear alternate-reverse;
 }
 
 @keyframes headerAnimate {
@@ -44,5 +49,29 @@
   100% {
     transform: translate(500px) rotate(400deg) scale(.01);
     filter: blur(200px) hue-rotate(400deg);
+  }
+}
+
+@keyframes glitch{
+  0%{
+    filter: blur(0px) hue-rotate(40deg);
+  }
+  5%{
+    filter: blur(5px) hue-rotate(140deg);
+  }
+  10%{
+    filter: blur(2px) hue-rotate(10deg);
+  }
+  50%{
+    filter: blur(3px) hue-rotate(70deg);
+  }
+  90%{
+    filter: blur(0px) hue-rotate(400deg);
+  }
+  95%{
+
+  }
+  100%{filter: blur(2px) hue-rotate(40deg);
+    filter: blur(0px) hue-rotate(40deg);
   }
 }
